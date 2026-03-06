@@ -1,20 +1,6 @@
-import getpass
+user, pw = input("Username: "), input("Password: ")
 
-# Govpreneur Database
-USERS = {
-    "admin@govpreneur.com": "password123",
-    "founder@startup.gov": "innovate2026"
-}
-
-def start_login():
-    print("--- GOVPRENEUR LOGIN PORTAL ---")
-    email = input("Email: ").strip()
-    password = getpass.getpass("Password: ")
-
-    if email in USERS and USERS[email] == password:
-        print("Access Granted. Welcome, Govpreneur.")
-    else:
-        print("Access Denied. Invalid Credentials.")
-
-if _name_ == "_main_":
-    start_login()
+if user == "admin" and pw == "gov123":
+    print("Access Granted: Welcome to GovPreneurs!")
+else:
+    print("Access Denied: Invalid Credentials.")
